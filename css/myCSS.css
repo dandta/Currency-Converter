@@ -1,0 +1,78 @@
+body {
+    color: white;
+}
+
+.mainPic {
+    background-image: url(/img/stock-1863880_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Play', cursive;
+    font-size: 5em !important;
+    padding: 0 0 0 0;
+    margin: 0;
+    font-weight: bold;
+    color: #4682B4;
+}
+
+.h4 {
+    color: #4682B4
+}
+
+.btn-primary {
+    opacity: 0.9;
+    color: white;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    /*color: floralwhite*/
+}
+
+.data {
+    font-size: 1.2em;
+    /*margin-left: 5%;*/
+}
+
+.jumbotron
+{
+    color: st
+}
+
+div.jumbotron.mainHeading {
+    text-align:center;
+    font: 'Play';
+    padding: 10px 0 10px 0;
+    /*background: #337ab7;*/
+    margin-bottom: 0;
+    margin: 30px 0 0 0;
+    color: steelblue;
+    background-color: rgba(73,73,73, 0.8);
+}
+
+.container .jumbotron {
+    border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+}
+
+div.jumbotron {
+    background-color: rgba(73,73,73, 0.8);
+}
+
+.table1 {
+    width: 40%;
+    float: left;
+    background-color: rgba(73,73,73, 0.8);
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.table2 {
+    width: 40%;
+    float: right;
+    background-color: rgba(73,73,73, 0.8);
+    font-weight: bold;
+    padding-left: 15px;
+}

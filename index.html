@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DTAsh Currency Calculator</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/myCSS.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body class="mainPic mainCol">
+    <div class="container">
+        <div class="jumbotron mainHeading">
+            <h1>Currency Calculator</h1>
+
+        </div>
+        <div id="main">
+            <div id="header" class="container-fluid">
+            </div>
+
+            <div class="container-fluid">
+
+                <div class="row">
+                    <label>Your Currency:</label><br>
+                    <div class="col-xs-3">
+                        <select id="currency" class="btn btn-primary" data-show-subtext="true" onchange="currencyConvert()">
+                    <option value="">Choose a Currency</option>
+                    <option value="AUD">AUD - Australian Dollar</option>
+                    <option value="CAD">CAD - Canadian Dollar</option>
+                    <option value="CHF">CHF - Swiss France</option>       
+                    <option value="CNY">CNY - Chinese Yuan Renminbi</option>
+                    <option value="DKK">DKK - Danish Krone</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="HKD">HKD - Hong Kong Dollar</option>
+                    <option value="HUF">HUF - Hungarian Forint</option>
+                    <option value="INR">INR - Indian Rupee</option>
+                    <option value="JPY">JPY - Japanese Yen</option>
+                    <option value="MXN">MXN - Mexican Peso</option>
+                    <option value="MYR">MYR - Malaysian Ringgit</option>
+                    <option value="NOK">NOK - Norwegian Krone</option>
+                    <option value="NZD">NZD - New Zealand Dollar</option>
+                    <option value="RUB">RUB - Russian Ruble</option>
+                    <option value="SEK">SEK - Swedish Krona</option>
+                    <option value="SGD">SGD - Singapore Dollar</option>
+                    <option value="THB">THB - Thai Baht</option>
+                    <option value="TRY">TRY - Turkish Lira</option>
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="ZAR">ZAR - South African Rand</option>
+                </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <label>Enter amount:<h6>please hit enter after changing value</h6></label><br>
+                    <div class="col-xs-12">
+                        <input type="number" class="btn btn-primary" id="amount" min="0" step="1" value="1" onkeyup="currencyConvert();" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table1">
+            <h4 style="color: #4682B4; text-align: left">CURRENCY COVERSIONS</h4>
+            <table border="0" id="converted" style="display: inline-block">
+                <tr>
+                    <td><img src="img/AUD.png"> AUD - Australian Dollar: </td>
+                    <td id="aud">
+                </tr>
+                <tr>
+                    <td><img src="img/CAD.png"> CAD - Canadian Dollar: </td>
+                    <td id="cad"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/CHF.png"> CHF - Swiss Franc: </td>
+                    <td id="chf"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/CNY.png"> CNY - Chinese Yuan: </td>
+                    <td id="cny"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/DKK.png"> DKK - Danish Krone: </td>
+                    <td id="dkk"></td>
+                </tr>
+                <tr>
+                    <td width= 300px style="color: gold"><img src="img/EUR.png"> EUR - Euro: </td>
+                    <td id="eur" style="color: gold"></td>
+                </tr>
+                <tr>
+                    <td style="color: gold"><img src="img/GBP.png"> GBP - British Pound: </td>
+                    <td id="gbp" style="color: gold"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/HKD.png"> HKD - Hong Kong Dollar: </td>
+                    <td id="hkd"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/HUF.png"> HUF - Hungarian Forint: </td>
+                    <td id="huf"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/IDR.png"> INR - Indian Rupee: </td>
+                    <td id="inr"></td>
+                </tr>
+                <tr>
+                    <td style="color: gold"><img src="img/JPY.png"> JPY - Japanese Yen: </td>
+                    <td id="jpy" style="color: gold"></td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="table2">
+            <h4 style="color: #4682B4; text-align: left">CURRENCY COVERSIONS</h4>
+            <table border="0" id="converted" style="display: inline-block">
+                <tr>
+                    <td><img src="img/MYR.png"> MYR - Malaysian Ringgit: </td>
+                    <td id="myr"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/NOK.png"> NOK - Norwegian Krone: </td>
+                    <td id="nok"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/NZD.png"> NZD - New Zealand Dollar: </td>
+                    <td id="nzd"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/MXN.png"> MXN - Mexican Peso: </td>
+                    <td id="mxn"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/RUB.png"> RUB - Russian Ruble: </td>
+                    <td id="rub"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/SEK.png"> SEK - Swedish Krona: </td>
+                    <td id="sek"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/SGD.png"> SDG - Singapore Dollar: </td>
+                    <td id="sgd"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/THB.png"> THB - Thai Baht: </td>
+                    <td id="thb"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/TRY.png"> TRY - Turkish Lira: </td>
+                    <td id="try"></td>
+                </tr>
+                <tr>
+                    <td width= 300px style="color: gold"><img src="img/USD.png"> USD - US Dollar: </td>
+                    <td id="usd" style="color: gold"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/ZAR.png"> ZAR - South African Rand: </td>
+                    <td id="zar"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/myScript.js"></script>
+
+</body>
+
+</html>
